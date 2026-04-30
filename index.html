@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alquiler Solidario</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container nav-content">
+        <div class="brand">👕 Alquiler Solidario</div>
+
+        <div class="search-wrap">
+          <input id="searchInput" type="text" placeholder="Buscar prendas..." />
+        </div>
+
+        <nav class="categories">
+          <button class="chip active" data-category="Todas">Todas</button>
+          <button class="chip" data-category="Hombre">Hombre</button>
+          <button class="chip" data-category="Mujer">Mujer</button>
+          <button class="chip" data-category="Bebé">Bebé</button>
+          <button class="chip" data-category="Eventos">Eventos</button>
+        </nav>
+
+        <button class="btn btn-primary">Mi Impacto</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <div>
+          <p class="eyebrow">🌿 Moda circular con propósito</p>
+          <h1>Viste el cambio, comparte el armario</h1>
+          <p class="subtitle">
+            Alquila prendas con estilo, reduce residuos textiles y apoya causas sociales en tu comunidad.
+          </p>
+          <div class="hero-actions">
+            <button class="btn btn-primary">Explorar colección</button>
+            <button class="btn btn-secondary">Cómo funciona</button>
+          </div>
+        </div>
+        <img
+          class="hero-image"
+          src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=1200&q=80"
+          alt="Ropa sostenible"
+        />
+      </section>
+
+      <section class="container products-section">
+        <h2>Prendas destacadas</h2>
+        <p>Selecciona tu look y multiplica el impacto positivo de cada alquiler.</p>
+        <div id="productsGrid" class="products-grid"></div>
+      </section>
+
+      <section class="impact">
+        <div class="container">
+          <h2>Impacto en tiempo real</h2>
+          <p>Cada alquiler extiende la vida útil de una prenda y financia oportunidades educativas.</p>
+
+          <div class="impact-grid">
+            <article class="impact-card">
+              <h3>💧 Litros de agua ahorrados</h3>
+              <p id="waterSaved" class="metric">94,250 L</p>
+            </article>
+            <article class="impact-card">
+              <h3>🎓 Uniformes donados</h3>
+              <p id="uniformsDonated" class="metric">1,320</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="legal-links">
+          <a href="#">Aviso legal</a>
+          <a href="#">Privacidad</a>
+          <a href="#">Términos</a>
+        </div>
+        <div class="social-links">
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
